@@ -47,7 +47,7 @@ IF defined argv[--help] (
     /nologo -fp:except !DEBARG! -GR- -EHa- -FC ^
     /I.\codebase\ext\ ^
     !EIGEN_DEFINE! ^
-    /EHsc /MDd main.cpp ^
+    /EHsc /MDd main_win.cpp ^
     /Feexecutable.exe ^
     /link /NODEFAULTLIB:MSVCRT ^
     OpenGL32.lib user32.lib gdi32.lib shell32.lib vcruntime.lib ^
@@ -76,7 +76,7 @@ IF defined argv[--help] (
 @echo off
 endlocal
 
-IF EXIST "main.obj"       ( del main.obj       )
+IF EXIST "main_win.obj"       ( del main.obj       )
 IF EXIST "executable.ilk" ( del executable.ilk )
 
 :setESC

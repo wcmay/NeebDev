@@ -19,7 +19,7 @@ else
         echo "[36m[cow] compiling in debug mode[0m"
     fi
 
-    clang++ -Wshadow -Werror=vla -fno-strict-aliasing -O$OPTARG -std=c++11 -g -Wall -Wextra -Wno-deprecated-declarations -Wno-missing-braces -Wno-missing-field-initializers -Wno-char-subscripts -Wno-writable-strings -I./codebase/ext -I./codebase/ext -L./codebase/ext -o executable_mac.exe main.cpp -lglfw3 -framework Cocoa -framework OpenGL -framework IOKit -framework AudioUnit -framework CoreAudio -framework AudioToolbox
+    clang++ -Wshadow -Werror=vla -fno-strict-aliasing -O$OPTARG -std=c++11 -g -Wall -Wextra -Wno-deprecated-declarations -Wno-missing-braces -Wno-missing-field-initializers -Wno-char-subscripts -Wno-writable-strings -I./codebase/ext -I./codebase/ext -L./codebase/ext -o executable_mac.exe main_mac.cpp -lglfw3 -framework Cocoa -framework OpenGL -framework IOKit -framework AudioUnit -framework CoreAudio -framework AudioToolbox
 
     if [ -f "executable_mac.exe" ]; then
         if [ "$1" = "--debug-vscode" ]; then
