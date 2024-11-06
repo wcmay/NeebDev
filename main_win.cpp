@@ -78,7 +78,7 @@ int main() {
         std::cout << "\nStarting game...\n\n";
         initialize_game();
         APPS {
-            APP(app3);
+            APP(NEEBLEMANCY);
             //APP(app1);
             //APP(carl);
         }

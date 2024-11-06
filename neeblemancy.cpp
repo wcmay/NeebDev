@@ -1364,7 +1364,7 @@ void update_time() {
     update_particles();
 }
 
-void app3() {
+void NEEBLEMANCY() {
     Camera3D camera = {5};
     camera.phi = 0.0;
     camera.angle_of_view = 45.0;

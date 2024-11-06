@@ -1254,7 +1254,7 @@ bool _app_while_loop_condition() {
             } \
         } else { \
             if (COW0._app_index == COW0._app_check) { \
-                sprintf(COW0._app_buffer, "%d/%d - %s", COW0._app_index + 1, COW0._app_numApps, STR(_app_name)); \
+                sprintf(COW0._app_buffer, "%s", STR(_app_name)); \
                 _cow_reset(); \
                 _window_set_title(COW0._app_buffer); \
                 _app_name(); \
